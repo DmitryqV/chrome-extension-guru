@@ -1,0 +1,10 @@
+{
+  "manifest_version": "2",
+  "name": "guru",
+  "description": "creators: Dmitrt: https://github.com/DmitryqV Bogdan: https://github.com/BogdanDirtyDwarf",
+  "version": "1.0.0",
+   "content_scripts": [{
+      "matches": ["https://esia.gosuslugi.ru/profile/user/personal"],
+      "js": ["main.js"]
+   }]
+}
