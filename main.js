@@ -13,16 +13,18 @@ setTimeout(() => {
   * Max rate = 200ms
   */
   setTimeout(() => {
-    /**
-    * Work with dom nodes
-    */
-    Array.from(document.querySelectorAll(".dd")).map((e, _) => {
-      if (_ === 2) e.innerText = birthDate;
-      
-      if (_ === 5) {
-        e.innerText = `${e.textContent.substring(0, e.textContent.trim().lastIndexOf(" "))}и ${releaseDate}`;
-      }
-    });
+    if (window.location.href === "https://esia.gosuslugi.ru/profile/user/personal") {
+      /**
+      * Work with dom nodes
+      */
+      Array.from(document.querySelectorAll(".dd")).map((e, _) => {
+        if (_ === 2) e.innerText = birthDate;
+
+        if (_ === 5) {
+          e.innerText = `${e.textContent.substring(0, e.textContent.trim().lastIndexOf(" "))}и ${releaseDate}`;
+        }
+      });
+    }
     /**
     * Coming soon
     */
